@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel API</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('./scr1/img/marvel....jpg'); 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+        .Buscador input {
+            width: 350px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .Buscador button {
+            width: 70px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(190, 0, 0);
+            color: white;
+        }
+        img {
+            width: 70px;
+        }
+        h1 {
+            color: white;
+        }
+        .character {
+            border: 1px solid #131313;
+            padding: 16px;
+            margin: 16px;
+        }
+        .character img {
+            max-width: 200px;
+            height: auto;
+        }
+        .character h2 {
+            color: rgb(255, 255, 255);
+        }
+        .character p {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">¡Encuentra a tu personaje favorito!</h1>
+    <div class="container">
+        <img src="./scr1/img/marvel.png" alt=""> <!-- Corrected path -->
+        <div class="Buscador">
+            <input type="search" id="searchInput" placeholder="Buscar...">
+            <button id="searchButton">Buscar</button>
+        </div>
+    </div>
+
+    <div id="characters"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
